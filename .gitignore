@@ -17,3 +17,6 @@
 /yarn-error.log
 
 .byebug_history
+
+# Don't commit secrets to version control
+/config/secrets.yml
