@@ -18,14 +18,10 @@
 
     <%= yield %>
 
+    <%= source_helper("application") %>
+
     <div>
       <%= render "shared/nav", location: 'top' %>
     </div>
-      
-
-
-    <% if session[:source]%>
-      <p>Thanks for visiting me from <%= session[:source] %></p>
-    <% end %>
   </body>
 </html>
