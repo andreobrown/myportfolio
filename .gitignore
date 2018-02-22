@@ -20,3 +20,5 @@
 
 # Don't commit secrets to version control
 /config/secrets.yml
+
+.env
