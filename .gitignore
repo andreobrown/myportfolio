@@ -21,4 +21,8 @@
 # Don't commit secrets to version control
 /config/secrets.yml
 
+# Don't commit the .env file
 .env
+
+# Ignore contents of uploads folder
+public/uploads/*
