@@ -57,7 +57,11 @@
     </div>
     <div class="col-md-6">
       <div class="actions" class="form-group">
+      <% if @portfolio_item.id? %>
         <%= link_to 'Cancel', portfolio_path(@portfolio_item), class: 'btn btn-warning btn-block' %>
+      <% else %>
+        <%= link_to 'Cancel', portfolios_path, class: 'btn btn-warning btn-block' %>
+      <% end %%>
       </div>
     </div>
   </div>
