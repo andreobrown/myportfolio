@@ -14,10 +14,11 @@
 //= require jquery3
 //= require jquery-ui
 //= require jquery_ujs
+//= require turbolinks
 //= require html.sortable
 //= require cocoon
 //= require gritter
-//= require turbolinks
+//= require cable
 //= require_tree .
 //= require popper
 //= require bootstrap-sprockets
