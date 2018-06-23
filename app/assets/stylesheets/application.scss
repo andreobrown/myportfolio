@@ -165,31 +165,31 @@ body {
  * Custom styles
  */
 
- .card-body {
-   color: black;
-   text-align: left;
- }
+.card-body {
+  color: black;
+  text-align: left;
+}
 
- .devise-links a{
-   color: black;
- }
+.devise-links a{
+  color: black;
+}
 
- .register-text {
+.register-text {
   text-align: right;
- }
+}
 
- .login > .card {
+.login > .card {
   width: 22rem;
   margin: 0 auto;
   float: none;
- }
+}
 
- .app-nav span{
+.app-nav span{
   margin-left: 10px;
   margin-right: 12px;
- }
+}
 
- #background {
+#background {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -202,17 +202,37 @@ body {
   transform: translateX(-50%) translateY(-50%); 
   background: image-url('main_background_image.jpg') no-repeat;
   background-size: cover;
- }
- 
- .tech-news{
-  color: black;
+}
+
+.tech-news{
+color: black;
   margin: 20px;
- }
+}
 
- .tech-news a {
-   color: orange;
- }
+.tech-news a {
+  color: orange;
+}
 
- .tech-news > .card{
-   padding: 30px;
- }
+.tech-news > .card{
+  padding: 30px;
+}
+
+.app-card-container {
+  color: black;
+}
+
+.app-card-container p {
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+.app-card-container h3 {
+  text-align: left;
+}
