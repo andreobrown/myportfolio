@@ -11,7 +11,7 @@ module DefaultPageContent
     end
 
     def set_title(title = nil)
-        @page_title = "Devcamp Portfolio | #{ title || "My Portfolio Website" }"
+        @page_title = "André O. Brown | #{ title || "My Mind and My Work" }"
     end
 
     def set_seo_keywords(keywords = nil)

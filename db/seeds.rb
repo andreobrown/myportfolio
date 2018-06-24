@@ -1,3 +1,22 @@
+User.create!(
+    email: "andre@aob.com.jm",
+    password: "Rails#2018",
+    password_confirmation: "Rails#2018",
+    name: "Andre O. Brown",
+    roles: "site_admin"
+)
+
+puts "1 Admin user created"
+
+User.create!(
+    email: "andre2@aob.com.jm",
+    password: "Rails#2018",
+    password_confirmation: "Rails#2018",
+    name: "Andre O. Brown II"
+)
+
+puts "1 Regular user created"
+
 3.times do |topic|
     Topic.create!(
         title: "Topic #{topic}"
@@ -19,7 +38,7 @@ puts "10 blog posts created"
 5.times do |skill|
     Skill.create!(
         title: "Rails #{skill}",
-        percent_utilised: 15
+        percent_utilised: 50
     )
 end
 
