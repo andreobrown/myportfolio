@@ -3,7 +3,5 @@ class Topic < ApplicationRecord
 
     has_many :blogs
 
-    def self.with_blogs
-        includes(:blogs).where.not(blogs: {id: nil, status: "draft"})
-    end
+    scope :with_blogs, -> { includes(:blogs).where.not(blogs: {id: nil, status: "draft"}) }
 end
