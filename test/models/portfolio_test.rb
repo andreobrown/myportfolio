@@ -11,4 +11,11 @@ class PortfolioTest < ActiveSupport::TestCase
 
     assert_equal expected, actual, "Portfolio items with title Ruby on Rails not successfully returned."
   end
+
+  test "named scope :sorted_by_display_position" do
+    expected = create_list(:portfolio, 10).sort_by(&:position)
+    actual = Portfolio.sorted_by_display_position
+
+    assert_equal expected, actual, "Portfolio items are not sorted in the correct display position."
+  end
 end

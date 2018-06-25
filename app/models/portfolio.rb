@@ -9,9 +9,7 @@ class Portfolio < ApplicationRecord
     mount_uploader :thumb_image, PortfolioUploader
     mount_uploader :main_image, PortfolioUploader
 
-    def self.by_position
-        order("position ASC")
-    end
+    scope :sorted_by_display_position, -> { order("position ASC") }
 
     scope :with_subtitle_ruby_on_rails, -> { where(subtitle: "Ruby on Rails")}
 end
