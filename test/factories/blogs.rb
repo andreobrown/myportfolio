@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :blog do
-    sequence(:title) { |n| "Blog Post #{n}"} 
-    body "Some random text"
+    title { Faker::DrWho.unique.quote }
+    body { Faker::Lorem.paragraphs(4, true) }
     topic
   end
 end

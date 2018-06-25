@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :topic do
-    sequence(:title) { |n| "Topic#{n}"}
+    title Faker::DrWho.catch_phrase
   end
 end
