@@ -10,9 +10,9 @@ class TopicsController < ApplicationController
     @topic = Topic.find(params[:id])
 
     if logged_in?(:site_admin)
-      @blogs = @topic.blogs.recent.page(params[:page]).per(5)
+      @blogs = @topic.blogs.sort_by_recent.page(params[:page]).per(5)
     else
-      @blogs = @topic.blogs.recent.published.page(params[:page]).per(5)
+      @blogs = @topic.blogs.sort_by_recent.published.page(params[:page]).per(5)
     end
   end
 
