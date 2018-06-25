@@ -13,5 +13,5 @@ class Portfolio < ApplicationRecord
         order("position ASC")
     end
 
-    scope :ruby_on_rails_portfolio_items, -> { where(subtitle: "Ruby on Rails")}
+    scope :with_subtitle_ruby_on_rails, -> { where(subtitle: "Ruby on Rails")}
 end
