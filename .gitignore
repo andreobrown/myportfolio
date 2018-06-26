@@ -26,3 +26,6 @@
 
 # Ignore contents of uploads folder
 public/uploads/*
+
+#Ignore visual studio code live share files
+.vs
